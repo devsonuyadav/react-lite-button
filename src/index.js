@@ -1,22 +1,42 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
+export default class LiteButton extends Component {
   static propTypes = {
-    text: PropTypes.string
-  }
+    title: PropTypes.string,
+    onClick: PropTypes.function,
+    color: PropTypes.array,
+    textColor: PropTypes.string,
+    textSize: PropTypes.string
+  };
 
   render() {
-    const {
-      text
-    } = this.props
+    const { title, onClick, color, textColor, textSize } = this.props;
+
+    const styles = {
+      button: {
+        background: `linear-gradient(45deg, ${
+          color ? color[0] : "#fe6b8b"
+        } 30%, ${color ? color[1] : "#ff8e53"} 90%)`,
+        borderRadius: 3,
+        border: 0,
+        color: textColor || "white",
+        height: 48,
+        width: "100%",
+        padding: "0px 20px",
+        boxShadow: "0px 3px 5px 2px rgba(255, 105, 135, .3)",
+
+        cursor: "pointer",
+        textAlign: "center",
+        fontSize: textSize ? textSize : 17,
+        fontFamily: '"Gill Sans", sans-serif'
+      }
+    };
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+      <button style={styles.button} onClick={onClick}>
+        {title}
+      </button>
+    );
   }
 }

@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'react-lite-button'
+import LiteButton from "react-lite-button";
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <LiteButton title='Modern React component module' />
       </div>
-    )
+    );
   }
 }

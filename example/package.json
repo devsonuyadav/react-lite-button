@@ -1,9 +1,9 @@
 {
-  "name": "react-lite-button-example",
+  "name": "react-lite-button",
   "homepage": "https://sky32752.github.io/react-lite-button",
-  "version": "0.0.0",
+  "version": "1.0.9",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
