@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import LiteButton from "../src/index";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("LiteButton", () => {
+  it("is truthy", () => {
+    expect(LiteButton).toBeTruthy();
+  });
+});

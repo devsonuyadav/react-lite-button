@@ -7,7 +7,8 @@ export default class LiteButton extends Component {
     onClick: PropTypes.function,
     color: PropTypes.array,
     textColor: PropTypes.string,
-    textSize: PropTypes.string
+    textSize: PropTypes.number,
+    width: PropTypes.number || PropTypes.string
   };
 
   render() {
@@ -22,7 +23,7 @@ export default class LiteButton extends Component {
         border: 0,
         color: textColor || "white",
         height: 48,
-        width: "100%",
+        width: "100%" || width,
         padding: "0px 20px",
         boxShadow: "0px 3px 5px 2px rgba(255, 105, 135, .3)",
 
