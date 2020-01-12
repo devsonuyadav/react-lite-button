@@ -5,20 +5,20 @@ export default class LiteButton extends Component {
   static propTypes = {
     title: PropTypes.string,
     onClick: PropTypes.function,
-    color: PropTypes.array,
+    colors: PropTypes.array,
     textColor: PropTypes.string,
     textSize: PropTypes.number,
     width: PropTypes.number || PropTypes.string
   };
 
   render() {
-    const { title, onClick, color, textColor, textSize } = this.props;
+    const { title, onClick, colors, textColor, textSize } = this.props;
 
     const styles = {
       button: {
         background: `linear-gradient(45deg, ${
-          color ? color[0] : "#fe6b8b"
-        } 30%, ${color ? color[1] : "#ff8e53"} 90%)`,
+          colors ? colors[0] : "#fe6b8b"
+        } 30%, ${colors ? colors[1] : "#ff8e53"} 90%)`,
         borderRadius: 3,
         border: 0,
         color: textColor || "white",
