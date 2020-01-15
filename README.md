@@ -11,7 +11,7 @@
 ![example](https://raw.githubusercontent.com/sky32752/react-lite-button/master/example.png)
 
 Buttom Loader example
-![example with Loader](/react-lite-button_loader.gif)
+![example with Loader](https://raw.githubusercontent.com/sky32752/react-lite-button/master/react-lite-button_loader.gif)
 
 ## Install
 
@@ -58,12 +58,13 @@ class Example extends Component {
 | borderRadius | number or string | 3                                          | borderRadius of the button                                  |
 | height       | number or string | 48                                         | height of the button                                        |
 | shadow       | string           | "0px 3px 5px 2px rgba(255, 105, 135, 0.3)" | button shadow color                                         |
-
-|loading| boolean| false | whether the button is currently |
-|loaderType | string | ClipLoader | loader type => "BarLoader" , "BounceLoader" etc checkout for more [More loaders @](https://www.davidhu.io/react-spinners/)|
-
-|loaderSize | number or string | 30 | size of the loader|
-|loaderColor | string | 'white' | color of the loader|
+| loading      | boolean          | false                                      | whether the button is currently                             |
+|  |
+| loaderType   | string           | ClipLoader                                 | [More loaders @](https://www.davidhu.io/react-spinners/)    |
+|  |
+| loaderSize   | number or string | 30                                         | size of the loader                                          |
+|  |
+| loaderColor  | string           | 'white'                                    | color of the loader                                         |
 
 ## License
 
