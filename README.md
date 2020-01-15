@@ -9,6 +9,8 @@
 ## Example
 
 ![example](https://raw.githubusercontent.com/sky32752/react-lite-button/master/example.png)
+
+Buttom Loader example
 ![example with Loader](/react-lite-button_loader.gif)
 
 ## Install
