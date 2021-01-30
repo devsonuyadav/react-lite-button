@@ -66,4 +66,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [sky32752](https://github.com/sky32752)
+MIT © [devsonuyadav](https://github.com/devsonuyadav)
